@@ -1,0 +1,19 @@
+include ./partials/header.pug
+include ./partials/navbar.pug
+
+h1 Create new user
+form.user-form#addUserForm(method="POST")
+	ul.user-form--container
+		li
+			label(for="userName") Name:
+			input#userName.inp(name="name" required)
+		li
+			label(for="userAge") Age:
+			input#userAge.inp(name="age" required)
+		li
+			label(for="userNationality") Nationality:
+			input#userNationality.inp(name="nationality" required)
+	button.btn(type="submit") Submit
+
+p You visited this page #{views} times
+

@@ -1,0 +1,16 @@
+include ./partials/header.pug
+include ./partials/navbar.pug
+
+if(message)
+	p.message #{message}
+
+h1 Sign in to our site
+form.user-form#SignUpForm(action="/signin" method="POST") 
+	ul.user-form--container
+		li
+			label(for="username") Username:
+			input#email.inp(type="text" name="username" required)
+		li
+			label(for="password") password:
+			input#password.inp(type="password"  name="password" required)
+	button.btn(type="submit") Sign me in!

@@ -1,0 +1,66 @@
+h1 {
+	color:red;
+	text-align: center
+}
+
+.user-form{
+	width: 25%;
+	margin: auto;
+	border: 1px solid black;
+	padding: 1.5rem;
+}
+.user-form--container {
+	padding: 0;
+}
+.user-form--container li {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 1rem;
+	list-style-type: none
+
+}
+
+.btn{
+	display:block;
+	margin: auto;
+}
+
+.users--container {
+	width: 25%;
+	margin: auto;
+}
+.users--container li {
+	margin: 0 auto 1.5rem auto;
+
+    text-align: center;
+	display: flex;
+	justify-content: space-between
+}
+
+.btn-close {
+	padding: 0;
+	line-height: 0;
+}
+
+.Nav {
+	display: flex;
+	justify-content: flex-end;  
+
+}
+
+.Nav li {
+	list-style-type: none;
+	margin-right: 2rem;
+}
+
+.userId {
+	display: none;
+}
+
+.frmDelete {
+	display: inline;
+}
+
+.message {
+	background-color: red
+}

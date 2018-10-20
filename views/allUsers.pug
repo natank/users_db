@@ -1,0 +1,11 @@
+include ./partials/header.pug
+include ./partials/navbar.pug
+
+h1 Users
+ul.users--container
+	each user, index in users
+		li
+			span #{index} #{user.name}: #{user.age}, #{user.nationality} 
+			form.frmDelete(action="/user/"+user._id+"?_method=DELETE" method="POST")
+				button.btn-close()
+					img(src='/close.png', alt="close" style="width: 0.8rem" )

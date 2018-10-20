@@ -1,0 +1,19 @@
+include ./partials/header.pug
+include ./partials/navbar.pug
+
+if(message)
+	p.message #{message}
+
+h1 Sign Up to our site
+form.user-form#SignUpForm(action="/signup/" method="POST") 
+	ul.user-form--container
+		li
+			label(for="userName") Name:
+			input#userName.inp(name="username" required)
+		li
+			label(for="email") Email:
+			input#email.inp(name="email" required)
+		li
+			label(for="password") password:
+			input#password.inp(name="password" required)
+	button.btn(type="submit") Sign-Up
